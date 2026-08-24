@@ -40,6 +40,12 @@
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/images.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/index.html</loc>
   </url>
   <url>
@@ -82,7 +88,19 @@
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/profiles.html</loc>
@@ -92,6 +110,12 @@
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-vscode-remote-ssh/profiles.html</loc>
