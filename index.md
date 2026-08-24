@@ -55,7 +55,7 @@ If you encounter issues during the workshop:
 
 Please complete the following:
 
-1. **Ensure you have an HPC account**: Log into [Sagehen cluster documentation](https://pomona-college-hpc.github.io/) to verify your account status
+1. **Ensure you have an HPC account**: Log into [Sagehen cluster documentation](https://pomona-college.github.io/) to verify your account status
 2. **Enable DUO MFA**: If you haven't already, register your device at duo.pomona.edu
 3. **Test SSH access**: From your terminal, try: `ssh <myusername>@sagehen.hpc.pomona.edu` (this will confirm your access works)
 4. **Download VS Code**: From [code.visualstudio.com](https://code.visualstudio.com)

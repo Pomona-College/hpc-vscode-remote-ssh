@@ -377,7 +377,7 @@ VS Code's interpreter picker finds and uses venvs automatically.
 - **VS Code Remote-SSH**: https://code.visualstudio.com/docs/remote/ssh
 - **VS Code Settings**: https://code.visualstudio.com/docs/getstarted/settings
 - **SLURM Manual**: https://slurm.schedmd.com/sbatch.html
-- **Sagehen Cluster**: https://pomona-college-hpc.github.io/
+- **Sagehen Cluster**: https://pomona-college.github.io/
 
 ### Getting Help
 - **Email**: its-hpc@pomona.edu

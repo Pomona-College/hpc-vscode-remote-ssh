@@ -4,7 +4,8 @@ keywords: 'Pomona College, HPC, research computing, VS Code, remote, SSH, develo
 created: '2026-03-05'
 license: 'CC-BY 4.0'
 contact: 'its-hpc@pomona.edu'
-source: 'https://github.com/pomona-college-hpc/vscode-remote-ssh'
+source: 'https://github.com/Pomona-College/hpc-vscode-remote-ssh'
+url: 'https://pomona-college.github.io/hpc-vscode-remote-ssh/'
 branch: 'main'
 life_cycle: 'stable'
 episodes:

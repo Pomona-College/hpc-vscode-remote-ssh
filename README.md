@@ -107,7 +107,7 @@ See [setup.md](setup.md) for customization instructions.
 
 - **Carpentries Workbench Format**: Uses standard Carpentries structure for episodes, challenges, and assessment
 - **License**: CC-BY 4.0
-- **Source**: https://github.com/pomona-college-hpc/vscode-remote-ssh
+- **Source**: https://github.com/Pomona-College/hpc-vscode-remote-ssh
 - **Life Cycle**: Pre-alpha (actively developed, feedback welcome)
 - **Cluster**: Sagehen HPC at Pomona College
 - **Contact**: its-hpc@pomona.edu
@@ -202,7 +202,7 @@ With the requirement to:
 - [Git Basics](https://git-scm.com/book/en/v2)
 
 ### Pomona College Resources
-- [Sagehen HPC Documentation](https://pomona-college-hpc.github.io/)
+- [Sagehen HPC Documentation](https://pomona-college.github.io/)
 - [ITS Help Desk](https://www.pomona.edu/its)
 - [HPC Support](https://pomona.edu/hpc)
 

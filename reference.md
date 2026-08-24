@@ -405,7 +405,7 @@ wget http://example.com/file.txt  # Download with wget
 - **VS Code Docs**: https://code.visualstudio.com/docs
 - **Remote-SSH Docs**: https://code.visualstudio.com/docs/remote/ssh
 - **SLURM Docs**: https://slurm.schedmd.com/sbatch.html
-- **Sagehen Cluster**: https://pomona-college-hpc.github.io/
+- **Sagehen Cluster**: https://pomona-college.github.io/
 - **Python Docs**: https://docs.python.org/3
 - **R Docs**: https://www.r-project.org/
 
@@ -415,7 +415,7 @@ wget http://example.com/file.txt  # Download with wget
 - Email: its-hpc@pomona.edu
 - Slack: #hpc-help (if available)
 - Office Hours: See HPC team schedule
-- GitHub Issues: https://github.com/pomona-college-hpc/vscode-remote-ssh
+- GitHub Issues: https://github.com/Pomona-College/hpc-vscode-remote-ssh
 
 **Include in support requests:**
 - Error message (exact text)

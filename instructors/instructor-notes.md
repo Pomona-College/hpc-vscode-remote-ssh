@@ -353,7 +353,7 @@ A: Yes! VS Code supports virtually all languages through extensions. Not all hav
 - **VS Code Docs**: https://code.visualstudio.com/docs/
 - **Remote-SSH Docs**: https://code.visualstudio.com/docs/remote/ssh
 - **SLURM Documentation**: https://slurm.schedmd.com/sbatch.html
-- **Sagehen HPC Docs**: https://pomona-college-hpc.github.io/
+- **Sagehen HPC Docs**: https://pomona-college.github.io/
 - **Git/GitHub Guides**: https://guides.github.com/
 
 ## Customizing for Other Clusters
