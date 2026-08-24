@@ -1,5 +1,6 @@
 carpentry: 'incubator'
 title: 'VS Code Remote-SSH for HPC — Pomona College HPC Workshop Series'
+description: 'Developing on Sagehen with VS Code Remote-SSH: remote editing, integrated terminals, SLURM workflows and debugging.'
 keywords: 'Pomona College, HPC, research computing, VS Code, remote, SSH, development, editor, sagehen'
 created: '2026-03-05'
 license: 'CC-BY 4.0'
