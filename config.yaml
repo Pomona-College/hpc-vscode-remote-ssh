@@ -1,0 +1,29 @@
+carpentry: 'incubator'
+title: 'VS Code Remote-SSH for HPC — Pomona College HPC Workshop Series'
+description: 'Developing on Sagehen with VS Code Remote-SSH: remote editing, integrated terminals, SLURM workflows and debugging.'
+keywords: 'Pomona College, HPC, research computing, VS Code, remote, SSH, development, editor, sagehen'
+created: '2026-03-05'
+license: 'CC-BY 4.0'
+contact: 'its-hpc@pomona.edu'
+source: 'https://github.com/Pomona-College/hpc-vscode-remote-ssh'
+url: 'https://pomona-college.github.io/hpc-vscode-remote-ssh/'
+branch: 'main'
+life_cycle: 'stable'
+episodes:
+- 01-why-remote.md
+- 02-installing-vscode.md
+- 03-ssh-config.md
+- 04-connecting.md
+- 05-file-editing-basics.md
+- 06-multi-file-editing.md
+- 07-integrated-terminal.md
+- 08-running-debugging.md
+- 09-extensions-hpc.md
+- 10-customization-tips.md
+learners:
+- setup.md
+- reference.md
+instructors:
+- instructor-notes.md
+profiles:
+- learner-profiles.md
