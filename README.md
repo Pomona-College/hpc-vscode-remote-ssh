@@ -210,4 +210,4 @@ With the requirement to:
 
 **Questions?** Contact its-hpc@pomona.edu or open an issue on GitHub.
 
-**Ready to get started?** Begin with [setup.md](setup.md) if you're new, or jump to [Episode 1](episodes/01-why-vscode-remote.md) if you're attending the workshop!
+**Ready to get started?** Begin with [setup.md](setup.md) if you're new, or jump to [Episode 1](episodes/01-why-remote.md) if you're attending the workshop!
