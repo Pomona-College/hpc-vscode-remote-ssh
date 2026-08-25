@@ -10,7 +10,7 @@ Before attending the workshop, please complete the following steps to ensure eve
 
 VS Code is the IDE we'll use to connect to Sagehen.
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### Windows
 
@@ -22,7 +22,7 @@ VS Code is the IDE we'll use to connect to Sagehen.
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### macOS
 
@@ -34,7 +34,7 @@ VS Code is the IDE we'll use to connect to Sagehen.
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### Linux (Ubuntu/Debian)
 
@@ -67,7 +67,7 @@ This extension allows VS Code to connect to remote machines via SSH.
 
 SSH keys enable secure passwordless authentication (though DUO MFA is still required).
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### Option A: Generate a New Key (Recommended)
 
@@ -89,7 +89,7 @@ This creates two files:
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### Option B: Use Existing SSH Key
 
@@ -134,7 +134,7 @@ Once you connect, you should see the Sagehen prompt. Type `exit` to disconnect.
 
 An SSH config file simplifies connecting to Sagehen. Create one on your local machine.
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### Windows (PowerShell)
 
@@ -161,7 +161,7 @@ Save the file (Ctrl+S).
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
+::::::::::::::::  spoiler
 
 ### macOS/Linux
 
