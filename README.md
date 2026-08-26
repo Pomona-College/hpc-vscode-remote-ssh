@@ -44,16 +44,16 @@ After completing this workshop, you will be able to:
 
 ## Quick Start for Learners
 
-1. **Before the workshop:** Complete the checklist in [setup.md](setup.md)
+1. **Before the workshop:** Complete the checklist in [setup.md](learners/setup.md)
 2. **During the workshop:** Follow along with each episode, complete challenges
-3. **After the workshop:** Refer to [reference.md](reference.md) for commands and troubleshooting
+3. **After the workshop:** Refer to [reference.md](learners/reference.md) for commands and troubleshooting
 
 ## Quick Start for Instructors
 
-1. **Prepare:** Read [setup.md](setup.md) for classroom setup
+1. **Prepare:** Read [setup.md](learners/setup.md) for classroom setup
 2. **Understand your audience:** See [instructors/learner-profiles.md](instructors/learner-profiles.md)
 3. **Teach:** Follow [instructors/instructor-notes.md](instructors/instructor-notes.md) for guidance
-4. **Reference:** Use [reference.md](reference.md) for accurate commands and settings
+4. **Reference:** Use [reference.md](learners/reference.md) for accurate commands and settings
 
 ## Key Features
 
@@ -101,7 +101,7 @@ This workshop is designed for Pomona College Sagehen cluster but can be adapted:
 5. Update SLURM examples to match your cluster's partitions and resources
 6. Add your institution's specific examples and policies
 
-See [setup.md](setup.md) for customization instructions.
+See [setup.md](learners/setup.md) for customization instructions.
 
 ## Technical Details
 
@@ -140,7 +140,7 @@ vscode-remote-ssh/
 - **During workshop**: Ask the instructor!
 - **After workshop**: Email its-hpc@pomona.edu
 - **Slack**: #hpc-help channel (if available)
-- **Documentation**: See [reference.md](reference.md) for troubleshooting
+- **Documentation**: See [reference.md](learners/reference.md) for troubleshooting
 
 ### For Instructors
 
@@ -215,4 +215,4 @@ With the requirement to:
 
 **Questions?** Contact its-hpc@pomona.edu or open an issue on GitHub.
 
-**Ready to get started?** Begin with [setup.md](setup.md) if you're new, or jump to [Episode 1](episodes/01-why-remote.md) if you're attending the workshop!
+**Ready to get started?** Begin with [setup.md](learners/setup.md) if you're new, or jump to [Episode 1](episodes/01-why-remote.md) if you're attending the workshop!
