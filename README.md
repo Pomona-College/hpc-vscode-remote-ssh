@@ -168,10 +168,15 @@ Found an issue? Have a suggestion? Contact its-hpc@pomona.edu with:
 
 ## Acknowledgments
 
+**Andrew Wilson** — Director of Research Computing and Digital Scholarship,
+Pomona College. Workshop design and development.
+
+**Andrei Motchenko** — testing, editing, cleanup and screenshots across the
+Pomona College HPC Workshop Series.
+
 This workshop was developed for Pomona College's HPC training program by the ITS-HPC team.
 
 Special thanks to:
-- Andrew Wilson (HPC Administrator)
 - All the learners who provided feedback and questions
 - The Carpentries community for the workshop framework
 
