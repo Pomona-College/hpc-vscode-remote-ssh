@@ -162,7 +162,7 @@ Found an issue? Have a suggestion? Contact its-hpc@pomona.edu with:
 
 ### Version 1.0 (2026-03-05)
 - Initial release
-- 6 episodes covering VS Code Remote-SSH basics
+- 10 episodes covering VS Code Remote-SSH basics
 - Instructor materials and learner profiles
 - Pomona College Sagehen specific content
 
