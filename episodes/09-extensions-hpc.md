@@ -30,7 +30,7 @@ exercises: 5
 When connected via Remote-SSH, extensions run in two places:
 
 - **Local extensions** (your laptop): Themes, colors, UI enhancements
-- **Remote extensions** (Sagehen cluster): Code analysis, linting, debugging,
+- **Remote extensions** (Sagehen HPC cluster): Code analysis, linting, debugging,
   language tools
 
 When you install an extension, VS Code tells you which type it is. Language
@@ -58,7 +58,7 @@ highlighting, function documentation, and R console integration.
 ### Jupyter (For notebooks)
 
 Search "Jupyter" by Microsoft. Install in SSH: sagehen. Create `.ipynb` files
-and run notebook cells directly on Sagehen's compute resources.
+and run notebook cells directly on Sagehen HPC's compute resources.
 
 ### GitLens (Version control)
 

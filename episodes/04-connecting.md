@@ -1,5 +1,5 @@
 ---
-title: "Connecting to Sagehen"
+title: "Connecting to Sagehen HPC"
 teaching: 10
 exercises: 10
 ---
@@ -14,7 +14,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Connect to Sagehen cluster using Remote-SSH
+- Connect to Sagehen HPC cluster using Remote-SSH
 - Authenticate with DUO MFA through VS Code
 - Open a remote folder and browse files
 - Handle disconnections and reconnect

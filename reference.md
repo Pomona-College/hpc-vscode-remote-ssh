@@ -251,7 +251,7 @@ head -n 20 filename.txt
 tail -n 20 filename.txt
 ```
 
-### File Paths on Sagehen
+### File Paths on Sagehen HPC
 ```bash
 # Home directory
 /rhome/<myusername>

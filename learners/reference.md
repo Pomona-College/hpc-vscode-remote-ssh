@@ -44,7 +44,7 @@ Key options:
 - **ServerAliveInterval** - Keep connection alive (300 = 5 minutes)
 - **ServerAliveCountMax** - Max missed pings before disconnect (2)
 
-### Connecting to Sagehen from VS Code
+### Connecting to Sagehen HPC from VS Code
 
 1. Click the Remote Explorer icon (left sidebar)
 2. Select "SSH Targets" from dropdown (if not already selected)
@@ -118,14 +118,14 @@ Key settings for HPC:
 
 ## Common VS Code Remote-SSH Tasks
 
-### Opening a Folder on Sagehen
+### Opening a Folder on Sagehen HPC
 
 1. Click File → Open Folder (Remote)
 2. Type the path: `/rhome/<myusername>/myproject`
 3. Click "OK"
 4. VS Code opens the folder
 
-### Editing Files on Sagehen
+### Editing Files on Sagehen HPC
 
 Once connected:
 - **File Explorer** (Ctrl+Shift+E) shows remote file tree
@@ -172,7 +172,7 @@ git push
 
 ## Sagehen-Specific Information
 
-### File Paths on Sagehen
+### File Paths on Sagehen HPC
 
 ```bash
 /rhome/<myusername>       # Your home directory (100GB, backed up)
@@ -297,7 +297,7 @@ If contacting HPC support:
 
 Contact: **its-hpc@pomona.edu**
 
-## File Transfer Between Local and Sagehen
+## File Transfer Between Local and Sagehen HPC
 
 ### Using SCP from Terminal
 
@@ -322,7 +322,7 @@ scp -v sagehen:~/largefile.tar.gz ./
 
 Or drag-and-drop files between VS Code window and file explorer.
 
-## Python Development on Sagehen
+## Python Development on Sagehen HPC
 
 ### Selecting Python Interpreter
 

@@ -13,7 +13,7 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Create, open, edit, and save files on Sagehen
+- Create, open, edit, and save files on Sagehen HPC
 - Use syntax highlighting and code completion
 - Navigate files with Quick Open and Go to Line
 - Upload files from your local computer via drag-and-drop

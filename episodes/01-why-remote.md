@@ -67,10 +67,10 @@ Your Laptop (Local Machine)          Sagehen Cluster (Remote)
          (Your view)                   (Where code runs)
 ```
 
-When you open a folder on Sagehen:
+When you open a folder on Sagehen HPC:
 
 1. VS Code's user interface runs on your laptop
-2. VS Code Server runs on the Sagehen cluster (very lightweight)
+2. VS Code Server runs on the Sagehen HPC cluster (very lightweight)
 3. File editing happens locally with VS Code's full features
 4. Extensions run on the remote system where they access your files
 5. The integrated terminal connects directly to the Sagehen login node

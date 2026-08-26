@@ -22,7 +22,7 @@ Understanding who takes this workshop helps instructors tailor the experience.
 
 **Learning Goals:**
 - Learn a better way to edit remote files
-- Get productive quickly on Sagehen
+- Get productive quickly on Sagehen HPC
 - Feel confident submitting jobs
 
 **Common Challenges:**

@@ -19,7 +19,7 @@ Before attending this workshop, complete these steps to ensure everything works:
 Before the workshop, verify:
 
 - [ ] VS Code is installed and runs
-- [ ] You can SSH to Sagehen and complete DUO authentication
+- [ ] You can SSH to Sagehen HPC and complete DUO authentication
 - [ ] You have a text editor to create ~/.ssh/config
 - [ ] Your internet connection is stable
 

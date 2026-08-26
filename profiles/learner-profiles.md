@@ -41,7 +41,7 @@ title: Learner Profiles
 **Motivation:**
 - Uses RStudio Desktop on local Windows machine
 - Lab has large datasets (genomics) that belong on HPC
-- Wants to move workflow to Sagehen but keep familiar tools
+- Wants to move workflow to Sagehen HPC but keep familiar tools
 - Need to collaborate with students accessing same cluster data
 
 **Experience:**
