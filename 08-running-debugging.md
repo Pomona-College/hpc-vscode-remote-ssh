@@ -8,7 +8,7 @@ exercises: 10
 
 - How do I run code directly in the VS Code terminal?
 - How do I use tmux for persistent sessions?
-- What debugging workflows work well on Sagehen?
+- What debugging workflows work well on Sagehen HPC?
 
 ::::::::::::::::::::::::::::::::::::::::::::::
 

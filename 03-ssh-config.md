@@ -6,7 +6,7 @@ exercises: 10
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- What SSH configuration do I need for Sagehen?
+- What SSH configuration do I need for Sagehen HPC?
 - How do I set up SSH keys for passwordless authentication?
 
 ::::::::::::::::::::::::::::::::::::::::::::::
@@ -39,11 +39,11 @@ mkdir -p ~/.ssh && chmod 700 ~/.ssh
 nano ~/.ssh/config
 ```
 
-### Add the Sagehen Entry
+### Add the Sagehen HPC Entry
 
 ::::::::::::::::::::::::::::::::::::: callout
 
-## SSH Configuration for Sagehen
+## SSH Configuration for Sagehen HPC
 
 Add this to your `~/.ssh/config` (replace `<myusername>` with your Pomona username):
 

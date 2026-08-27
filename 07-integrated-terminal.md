@@ -15,7 +15,7 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Open and use VS Code's integrated terminal on Sagehen
+- Open and use VS Code's integrated terminal on Sagehen HPC
 - Run SLURM commands (sbatch, squeue, scancel, seff)
 - Use multiple terminal tabs and split terminals for parallel workflows
 - Configure a custom terminal profile that auto-loads your conda environment

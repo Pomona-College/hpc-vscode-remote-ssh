@@ -79,7 +79,7 @@ Before connecting, you MUST enable one critical setting:
 2. Search for: `remote.SSH.showLoginTerminal`
 3. **Check the checkbox** to enable this setting
 
-**Why this matters:** Sagehen requires DUO MFA. Without this setting, DUO
+**Why this matters:** Sagehen HPC requires DUO MFA. Without this setting, DUO
 prompts appear in an invisible terminal and you cannot authenticate. This is the
 number one reason people cannot connect initially.
 

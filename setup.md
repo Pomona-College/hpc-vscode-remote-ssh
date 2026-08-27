@@ -111,9 +111,9 @@ Look for files like `id_ed25519`, `id_rsa`, or similar. If you find them, you ca
 
 :::::::::::::::::::::::::
 
-### 4. Test SSH Connection to Sagehen
+### 4. Test SSH Connection to Sagehen HPC
 
-Before the workshop, verify you can log in to the Sagehen cluster.
+Before the workshop, verify you can log in to the Sagehen HPC cluster.
 
 ```bash
 ssh <myusername>@sagehen.hpc.pomona.edu
@@ -213,7 +213,7 @@ On Windows, if `ssh-copy-id` doesn't work, use PowerShell:
 type $ENV:USERPROFILE\.ssh\id_sagehen.pub | ssh sagehen "cat >> ~/.ssh/authorized_keys"
 ```
 
-### 8. Copy Files to Sagehen (Optional)
+### 8. Copy Files to Sagehen HPC (Optional)
 
 You may need to copy files between your computer and Sagehen. Test with a sample file:
 
