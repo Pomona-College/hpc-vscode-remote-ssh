@@ -264,7 +264,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-connecting.html">4. Connecting to Sagehen</a>
+        <a href="04-connecting.html">4. Connecting to Sagehen HPC</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -401,7 +401,12 @@
         <h1>All Images</h1>
         
 <section id="01-why-remote"><h2 class="section-heading"><a href="01-why-remote.html">Why VS Code Remote?</a></h2>
-<hr class="half-width"></section><section id="02-installing-vscode"><h2 class="section-heading"><a href="02-installing-vscode.html">Installing VS Code</a></h2>
+<hr class="half-width">
+<h3 id="01-why-remote-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Two panels. On your laptop, the VS Code window provides the editor, file tree and terminal panel. Connected over SSH, the Sagehen HPC head node runs the VS Code Server, which in turn reaches your files in /rhome and /bigdata, extensions running on the cluster, and a terminal giving a cluster shell. A note explains that only the interface runs on your laptop, so heavy work must still go through SLURM rather than the head node.’</p>
+<figure><img src="../fig/01-remote-architecture.png" alt="Two panels. On your laptop, the VS Code window provides the editor, file tree and terminal panel. Connected over SSH, the Sagehen HPC head node runs the VS Code Server, which in turn reaches your files in /rhome and /bigdata, extensions running on the cluster, and a terminal giving a cluster shell. A note explains that only the interface runs on your laptop, so heavy work must still go through SLURM rather than the head node." class="figure mx-auto d-block"><div class="figcaption">The window is local; everything else is on the
+cluster.</div>
+</figure><hr></section><section id="02-installing-vscode"><h2 class="section-heading"><a href="02-installing-vscode.html">Installing VS Code</a></h2>
 <hr class="half-width"></section><section id="03-ssh-config"><h2 class="section-heading"><a href="03-ssh-config.html">Setting Up SSH Config</a></h2>
 <hr class="half-width">
 <h3 id="03-ssh-config-figure-1">Figure 1</h3>
@@ -409,7 +414,7 @@
 <figure><img src="../fig/03-ssh-config-verify-windows.png" alt="A PowerShell window where ssh -G sagehen is piped to Select-String to filter key settings. The output shows the username, hostname sagehen.hpc.pomona.edu, serveralivecountmax 2, and serveraliveinterval 300." class="figure mx-auto d-block"><div class="figcaption">Verifying the effective config on Windows:
 <code>ssh -G sagehen</code> filtered through
 <code>Select-String</code>.</div>
-</figure><hr></section><section id="04-connecting"><h2 class="section-heading"><a href="04-connecting.html">Connecting to Sagehen</a></h2>
+</figure><hr></section><section id="04-connecting"><h2 class="section-heading"><a href="04-connecting.html">Connecting to Sagehen HPC</a></h2>
 <hr class="half-width">
 <h3 id="04-connecting-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘The VS Code Remote Explorer panel open from the activity bar. Under Remotes and an SSH group, a host named sagehen appears with a green connected badge.’</p>
@@ -507,8 +512,8 @@ Sagehen.</div>
   "url": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/images.html",
   "identifier": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/images.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

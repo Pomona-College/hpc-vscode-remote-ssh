@@ -264,7 +264,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-connecting.html">4. Connecting to Sagehen</a>
+        <a href="04-connecting.html">4. Connecting to Sagehen HPC</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -402,7 +402,7 @@
         
 <section id="aio-01-why-remote"><p>Content from <a href="01-why-remote.html">Why VS Code Remote?</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/01-why-remote.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -452,7 +452,9 @@ the cluster.</p>
 <p>Key insight: You are not editing files over SSH through a terminal
 emulator; VS Code creates a true two-way connection with full IDE
 capabilities.</p>
-</section><section><h2 class="section-heading" id="comparison-with-other-tools">Comparison with Other Tools<a class="anchor" aria-label="anchor" href="#comparison-with-other-tools"></a>
+<figure><img src="../fig/01-remote-architecture.png" alt="Two panels. On your laptop, the VS Code window provides the editor, file tree and terminal panel. Connected over SSH, the Sagehen HPC head node runs the VS Code Server, which in turn reaches your files in /rhome and /bigdata, extensions running on the cluster, and a terminal giving a cluster shell. A note explains that only the interface runs on your laptop, so heavy work must still go through SLURM rather than the head node." class="figure mx-auto d-block"><div class="figcaption">The window is local; everything else is on the
+cluster.</div>
+</figure></section><section><h2 class="section-heading" id="comparison-with-other-tools">Comparison with Other Tools<a class="anchor" aria-label="anchor" href="#comparison-with-other-tools"></a>
 </h2>
 <hr class="half-width">
 <div id="command-line-editors-vs-modern-ide" class="callout">
@@ -488,10 +490,11 @@ limited code editing.</p>
 │   (Editor, Sidebar, etc.)│  SSH   │  (Files, Extensions) │
 └──────────────────────────┘        └──────────────────────┘
          (Your view)                   (Where code runs)</code></pre>
-<p>When you open a folder on Sagehen:</p>
+<p>When you open a folder on Sagehen HPC:</p>
 <ol style="list-style-type: decimal">
 <li>VS Code’s user interface runs on your laptop</li>
-<li>VS Code Server runs on the Sagehen cluster (very lightweight)</li>
+<li>VS Code Server runs on the Sagehen HPC cluster (very
+lightweight)</li>
 <li>File editing happens locally with VS Code’s full features</li>
 <li>Extensions run on the remote system where they access your
 files</li>
@@ -555,7 +558,7 @@ Linux</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Common answers from HPC users:</p>
 <ol style="list-style-type: decimal">
@@ -597,7 +600,7 @@ development workflow</li>
 </div>
 </section></section><section id="aio-02-installing-vscode"><p>Content from <a href="02-installing-vscode.html">Installing VS Code</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/02-installing-vscode.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -721,10 +724,10 @@ Authentication</h3>
 <li>
 <strong>Check the checkbox</strong> to enable this setting</li>
 </ol>
-<p><strong>Why this matters:</strong> Sagehen requires DUO MFA. Without
-this setting, DUO prompts appear in an invisible terminal and you cannot
-authenticate. This is the number one reason people cannot connect
-initially.</p>
+<p><strong>Why this matters:</strong> Sagehen HPC requires DUO MFA.
+Without this setting, DUO prompts appear in an invisible terminal and
+you cannot authenticate. This is the number one reason people cannot
+connect initially.</p>
 </div>
 </div>
 </div>
@@ -787,7 +790,7 @@ is required for DUO</li>
 </div>
 </section></section><section id="aio-03-ssh-config"><p>Content from <a href="03-ssh-config.html">Setting Up SSH Config</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/03-ssh-config.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -802,7 +805,7 @@ is required for DUO</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What SSH configuration do I need for Sagehen?</li>
+<li>What SSH configuration do I need for Sagehen HPC?</li>
 <li>How do I set up SSH keys for passwordless authentication?</li>
 </ul>
 </div>
@@ -843,15 +846,15 @@ You need an entry for Sagehen in <code>~/.ssh/config</code>.</p>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="fu">nano</span> ~/.ssh/config</span></code></pre>
 </div>
 <div class="section level3">
-<h3 id="add-the-sagehen-entry">Add the Sagehen Entry<a class="anchor" aria-label="anchor" href="#add-the-sagehen-entry"></a>
+<h3 id="add-the-sagehen-hpc-entry">Add the Sagehen HPC Entry<a class="anchor" aria-label="anchor" href="#add-the-sagehen-hpc-entry"></a>
 </h3>
-<div id="ssh-configuration-for-sagehen" class="callout">
+<div id="ssh-configuration-for-sagehen-hpc" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="ssh-configuration-for-sagehen" class="callout-inner">
-<h3 class="callout-title">SSH Configuration for Sagehen</h3>
+<div id="ssh-configuration-for-sagehen-hpc" class="callout-inner">
+<h3 class="callout-title">SSH Configuration for Sagehen HPC</h3>
 <div class="callout-content">
 <p>Add this to your <code>~/.ssh/config</code> (replace
 <code>&lt;myusername&gt;</code> with your Pomona username):</p>
@@ -1019,9 +1022,9 @@ Code Remote-SSH</li>
 </div>
 </div>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
-<script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-04-connecting"><p>Content from <a href="04-connecting.html">Connecting to Sagehen</a></p>
+<script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-04-connecting"><p>Content from <a href="04-connecting.html">Connecting to Sagehen HPC</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/04-connecting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -1048,7 +1051,7 @@ Code Remote-SSH</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Connect to Sagehen cluster using Remote-SSH</li>
+<li>Connect to Sagehen HPC cluster using Remote-SSH</li>
 <li>Authenticate with DUO MFA through VS Code</li>
 <li>Open a remote folder and browse files</li>
 <li>Handle disconnections and reconnect</li>
@@ -1245,7 +1248,7 @@ interruptions</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-05-file-editing-basics"><p>Content from <a href="05-file-editing-basics.html">File Editing Basics</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/05-file-editing-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -1271,7 +1274,7 @@ interruptions</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Create, open, edit, and save files on Sagehen</li>
+<li>Create, open, edit, and save files on Sagehen HPC</li>
 <li>Use syntax highlighting and code completion</li>
 <li>Navigate files with Quick Open and Go to Line</li>
 <li>Upload files from your local computer via drag-and-drop</li>
@@ -1412,7 +1415,7 @@ the currently open folder. Multiple files can be dragged at once.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The file tab shows <code>hello_world.py</code> without a dot
 (indicating saved). Python syntax highlighting colors
@@ -1674,7 +1677,7 @@ differences</li>
 </div>
 </section></section><section id="aio-07-integrated-terminal"><p>Content from <a href="07-integrated-terminal.html">Integrated Terminal</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/07-integrated-terminal.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1703,7 +1706,7 @@ workflow?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Open and use VS Code’s integrated terminal on Sagehen</li>
+<li>Open and use VS Code’s integrated terminal on Sagehen HPC</li>
 <li>Run SLURM commands (sbatch, squeue, scancel, seff)</li>
 <li>Use multiple terminal tabs and split terminals for parallel
 workflows</li>
@@ -2066,7 +2069,7 @@ efficiency</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><img src="../fig/07-three-terminals-submit-monitor-tail.png" alt="The whole workflow in three split terminals: sbatch on the left, squeue in the middle, tail -f on the log at right." class="figure">{alt=‘VS
 Code’s terminal panel split into three panes, all connected to Sagehen.
@@ -2106,7 +2109,7 @@ default.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>In settings.json:</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -2164,7 +2167,7 @@ HPC work</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-08-running-debugging"><p>Content from <a href="08-running-debugging.html">Running and Debugging Code</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/08-running-debugging.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -2181,7 +2184,7 @@ HPC work</li>
 <ul>
 <li>How do I run code directly in the VS Code terminal?</li>
 <li>How do I use tmux for persistent sessions?</li>
-<li>What debugging workflows work well on Sagehen?</li>
+<li>What debugging workflows work well on Sagehen HPC?</li>
 </ul>
 </div>
 </div>
@@ -2362,7 +2365,7 @@ connection.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>After detaching and reattaching, window 0 still shows the
 <code>watch</code> command running with periodic <code>squeue</code>
@@ -2397,7 +2400,7 @@ extensions</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script></section></section><section id="aio-09-extensions-hpc"><p>Content from <a href="09-extensions-hpc.html">Extensions for HPC</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/09-extensions-hpc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -2452,8 +2455,8 @@ Matters</h3>
 <strong>Local extensions</strong> (your laptop): Themes, colors, UI
 enhancements</li>
 <li>
-<strong>Remote extensions</strong> (Sagehen cluster): Code analysis,
-linting, debugging, language tools</li>
+<strong>Remote extensions</strong> (Sagehen HPC cluster): Code
+analysis, linting, debugging, language tools</li>
 </ul>
 <p>When you install an extension, VS Code tells you which type it is.
 Language extensions (Python, R, Jupyter) should be installed on the
@@ -2489,8 +2492,8 @@ integration.</p>
 <h3 id="jupyter-for-notebooks">Jupyter (For notebooks)<a class="anchor" aria-label="anchor" href="#jupyter-for-notebooks"></a>
 </h3>
 <p>Search “Jupyter” by Microsoft. Install in SSH: sagehen. Create
-<code>.ipynb</code> files and run notebook cells directly on Sagehen’s
-compute resources.</p>
+<code>.ipynb</code> files and run notebook cells directly on Sagehen
+HPC’s compute resources.</p>
 </div>
 <div class="section level3">
 <h3 id="gitlens-version-control">GitLens (Version control)<a class="anchor" aria-label="anchor" href="#gitlens-version-control"></a>
@@ -2903,8 +2906,8 @@ trimming, and increased terminal scrollback</li>
   "url": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/aio.html",
   "identifier": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/aio.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

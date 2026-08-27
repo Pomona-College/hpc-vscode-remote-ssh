@@ -230,7 +230,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-connecting.html">4. Connecting to Sagehen</a>
+        <a href="04-connecting.html">4. Connecting to Sagehen HPC</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -363,7 +363,7 @@ work</li>
 <hr class="half-width"><ul><li>
 <strong>Your own laptop</strong> (Windows, Mac, or Linux)</li>
 <li>
-<strong>A Pomona College HPC account</strong> on Sagehen
+<strong>A Pomona College HPC account</strong> on Sagehen HPC
 cluster</li>
 <li>
 <strong>VS Code installed</strong> on your local machine</li>
@@ -371,7 +371,7 @@ cluster</li>
 <strong>SSH access credentials</strong> for the cluster</li>
 <li>
 <strong>DUO MFA enabled</strong> on your account (required by
-Sagehen)</li>
+Sagehen HPC)</li>
 <li>
 <strong>30-45 minutes</strong> for the full workshop</li>
 </ul></section><section><h2 class="section-heading" id="workshop-structure">Workshop structure<a class="anchor" aria-label="anchor" href="#workshop-structure"></a></h2>
@@ -414,7 +414,7 @@ problems and solutions</li>
 </ul></section><section><h2 class="section-heading" id="before-you-begin">Before you begin<a class="anchor" aria-label="anchor" href="#before-you-begin"></a></h2>
 <hr class="half-width"><p>Please complete the following:</p>
 <ol style="list-style-type: decimal"><li>
-<strong>Ensure you have an HPC account</strong>: Log into <a href="https://pomona-college.github.io/" class="external-link">Sagehen cluster
+<strong>Ensure you have an HPC account</strong>: Log into <a href="https://pomona-college.github.io/" class="external-link">Sagehen HPC cluster
 documentation</a> to verify your account status</li>
 <li>
 <strong>Enable DUO MFA</strong>: If you haven’t already, register
@@ -464,14 +464,14 @@ the Remote-SSH extension?
  3. <a href="03-ssh-config.html">Setting Up SSH Config</a>
 </td>
 <td>
-What SSH configuration do I need for Sagehen?<br>How do I set up SSH
-keys for passwordless authentication?
+What SSH configuration do I need for Sagehen HPC?<br>How do I set up
+SSH keys for passwordless authentication?
 </td>
 </tr><tr><td>
 <span class="visually-hidden">Duration: </span>00h 50m
 </td>
 <td>
- 4. <a href="04-connecting.html">Connecting to Sagehen</a>
+ 4. <a href="04-connecting.html">Connecting to Sagehen HPC</a>
 </td>
 <td>
 How do I connect to Sagehen using VS Code Remote-SSH?<br>How do I
@@ -519,7 +519,7 @@ environments and load modules cleanly?
 <td>
 How do I run code directly in the VS Code terminal?<br>How do I use
 tmux for persistent sessions?<br>What debugging workflows work well on
-Sagehen?
+Sagehen HPC?
 </td>
 </tr><tr><td>
 <span class="visually-hidden">Duration: </span>02h 40m
@@ -568,7 +568,7 @@ ensure everything is working properly.</p>
   Windows
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Visit <a href="https://code.visualstudio.com" class="external-link">code.visualstudio.com</a>
 </li>
@@ -588,7 +588,7 @@ ensure everything is working properly.</p>
   macOS
   </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Visit <a href="https://code.visualstudio.com" class="external-link">code.visualstudio.com</a>
 </li>
@@ -608,7 +608,7 @@ ensure everything is working properly.</p>
   Linux (Ubuntu/Debian)
   </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -652,7 +652,7 @@ still required).</p>
   Option A: Generate a New Key (Recommended)
   </h3>
 </button>
-<div id="collapseSpoiler4" class="accordion-collapse collapse" aria-labelledby="headingSpoiler4" data-bs-parent="#accordionSpoiler4">
+<div id="collapseSpoiler4" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler4" aria-labelledby="headingSpoiler4">
 <div class="accordion-body">
 <p><strong>On Windows (PowerShell):</strong></p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -682,7 +682,7 @@ secret!) - <code>id_sagehen.pub</code> (public key - copy to server)</p>
   Option B: Use Existing SSH Key
   </h3>
 </button>
-<div id="collapseSpoiler5" class="accordion-collapse collapse" aria-labelledby="headingSpoiler5" data-bs-parent="#accordionSpoiler5">
+<div id="collapseSpoiler5" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler5" aria-labelledby="headingSpoiler5">
 <div class="accordion-body">
 <p>If you already have an SSH key pair on your system, you can use
 it.</p>
@@ -707,8 +707,8 @@ similar. If you find them, you can skip key generation.</p>
 </div>
 </div>
 <div class="section level3">
-<h3 id="test-ssh-connection-to-sagehen">4. Test SSH Connection to Sagehen<a class="anchor" aria-label="anchor" href="#test-ssh-connection-to-sagehen"></a></h3>
-<p>Before the workshop, verify you can log in to the Sagehen
+<h3 id="test-ssh-connection-to-sagehen-hpc">4. Test SSH Connection to Sagehen HPC<a class="anchor" aria-label="anchor" href="#test-ssh-connection-to-sagehen-hpc"></a></h3>
+<p>Before the workshop, verify you can log in to the Sagehen HPC
 cluster.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -735,7 +735,7 @@ your local machine.</p>
   Windows (PowerShell)
   </h3>
 </button>
-<div id="collapseSpoiler6" class="accordion-collapse collapse" aria-labelledby="headingSpoiler6" data-bs-parent="#accordionSpoiler6">
+<div id="collapseSpoiler6" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler6" aria-labelledby="headingSpoiler6">
 <div class="accordion-body">
 <p>Create the file (if it doesn’t exist):</p>
 <div class="codewrapper sourceCode" id="cb7">
@@ -768,7 +768,7 @@ username):</p>
   macOS/Linux
   </h3>
 </button>
-<div id="collapseSpoiler7" class="accordion-collapse collapse" aria-labelledby="headingSpoiler7" data-bs-parent="#accordionSpoiler7">
+<div id="collapseSpoiler7" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler7" aria-labelledby="headingSpoiler7">
 <div class="accordion-body">
 <p>Open a terminal and create/edit the config:</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -826,7 +826,7 @@ PowerShell:</p>
 </div>
 </div>
 <div class="section level3">
-<h3 id="copy-files-to-sagehen-optional">8. Copy Files to Sagehen (Optional)<a class="anchor" aria-label="anchor" href="#copy-files-to-sagehen-optional"></a></h3>
+<h3 id="copy-files-to-sagehen-hpc-optional">8. Copy Files to Sagehen HPC (Optional)<a class="anchor" aria-label="anchor" href="#copy-files-to-sagehen-hpc-optional"></a></h3>
 <p>You may need to copy files between your computer and Sagehen. Test
 with a sample file:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -942,8 +942,8 @@ workshop!</p>
   "url": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/index.html",
   "identifier": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/index.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

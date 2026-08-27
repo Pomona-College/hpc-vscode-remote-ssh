@@ -230,7 +230,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-connecting.html">4. Connecting to Sagehen</a>
+        <a href="04-connecting.html">4. Connecting to Sagehen HPC</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -348,7 +348,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why VS Code Remote?</h1>
-        <p>Last updated on 2026-08-24 |
+        <p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-vscode-remote-ssh/edit/main/episodes/01-why-remote.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -399,7 +399,9 @@ the cluster.</p>
 <p>Key insight: You are not editing files over SSH through a terminal
 emulator; VS Code creates a true two-way connection with full IDE
 capabilities.</p>
-</section><section><h2 class="section-heading" id="comparison-with-other-tools">Comparison with Other Tools<a class="anchor" aria-label="anchor" href="#comparison-with-other-tools"></a></h2>
+<figure><img src="../fig/01-remote-architecture.png" alt="Two panels. On your laptop, the VS Code window provides the editor, file tree and terminal panel. Connected over SSH, the Sagehen HPC head node runs the VS Code Server, which in turn reaches your files in /rhome and /bigdata, extensions running on the cluster, and a terminal giving a cluster shell. A note explains that only the interface runs on your laptop, so heavy work must still go through SLURM rather than the head node." class="figure mx-auto d-block"><div class="figcaption">The window is local; everything else is on the
+cluster.</div>
+</figure></section><section><h2 class="section-heading" id="comparison-with-other-tools">Comparison with Other Tools<a class="anchor" aria-label="anchor" href="#comparison-with-other-tools"></a></h2>
 <hr class="half-width"><div id="command-line-editors-vs-modern-ide" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -431,9 +433,10 @@ limited code editing.</p>
 │   (Editor, Sidebar, etc.)│  SSH   │  (Files, Extensions) │
 └──────────────────────────┘        └──────────────────────┘
          (Your view)                   (Where code runs)</code></pre>
-<p>When you open a folder on Sagehen:</p>
+<p>When you open a folder on Sagehen HPC:</p>
 <ol style="list-style-type: decimal"><li>VS Code’s user interface runs on your laptop</li>
-<li>VS Code Server runs on the Sagehen cluster (very lightweight)</li>
+<li>VS Code Server runs on the Sagehen HPC cluster (very
+lightweight)</li>
 <li>File editing happens locally with VS Code’s full features</li>
 <li>Extensions run on the remote system where they access your
 files</li>
@@ -491,7 +494,7 @@ Linux</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Common answers from HPC users:</p>
 <ol style="list-style-type: decimal"><li>
@@ -587,8 +590,8 @@ development workflow</li>
   "url": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/01-why-remote.html",
   "identifier": "https://pomona-college.github.io/hpc-vscode-remote-ssh/instructor/01-why-remote.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-24",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>
