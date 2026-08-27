@@ -33,6 +33,8 @@ features while working on the cluster.
 Key insight: You are not editing files over SSH through a terminal emulator;
 VS Code creates a true two-way connection with full IDE capabilities.
 
+![The window is local; everything else is on the cluster.](fig/01-remote-architecture.png){alt='Two panels. On your laptop, the VS Code window provides the editor, file tree and terminal panel. Connected over SSH, the Sagehen HPC head node runs the VS Code Server, which in turn reaches your files in /rhome and /bigdata, extensions running on the cluster, and a terminal giving a cluster shell. A note explains that only the interface runs on your laptop, so heavy work must still go through SLURM rather than the head node.'}
+
 ## Comparison with Other Tools
 
 ::::::::::::::::::::::::::::::::::::: callout
